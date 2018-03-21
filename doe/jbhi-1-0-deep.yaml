@@ -1,0 +1,1243 @@
+ALL_EXPERIMENTS:
+- !!python/tuple
+  - '-1'
+  - !!python/tuple ['-1', '-1', '-1', '2', '-1', '-1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fullcross, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fullcross-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fullcross-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=-1 D1_N=-1 a=-1 b=2 c=-1
+      d=-1 e=-1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '0', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: -1
+      -1 -1 2 -1 -1 -1 -1}
+  - {D1_N: '-1', _S: '-1', a: '-1', b: '2', c: '-1', d: '-1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '-2'
+  - !!python/tuple ['-2', '-2', '-1', '2', '-1', '-1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fullcross, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fullcross-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fullcross-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=-2 D1_N=-2 a=-1 b=2 c=-1
+      d=-1 e=-1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '1', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/305", D1_MAX_NUMBER_OF_STEPS: '30000',
+    D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101_seg, D1_MODEL_NAME: RESNET_SEG,
+    D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '305', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: -2 -2 -1 2 -1 -1 -1 1}
+  - {D1_N: '-2', _S: '-2', a: '-1', b: '2', c: '-1', d: '-1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '-3'
+  - !!python/tuple ['-3', '-3', '-1', '2', '1', '-1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fullcross, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fullcross-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fullcross-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=-3 D1_N=-3 a=-1 b=2 c=1
+      d=-1 e=-1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '2', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: -3
+      -3 -1 2 1 -1 -1 -1}
+  - {D1_N: '-3', _S: '-3', a: '-1', b: '2', c: '1', d: '-1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '-4'
+  - !!python/tuple ['-4', '-4', '-1', '2', '1', '-1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fullcross, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fullcross-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fullcross-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=-4 D1_N=-4 a=-1 b=2 c=1
+      d=-1 e=-1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '3', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/598", D1_MAX_NUMBER_OF_STEPS: '30000',
+    D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101_seg, D1_MODEL_NAME: RESNET_SEG,
+    D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: -4 -4 -1 2 1 -1 -1 1}
+  - {D1_N: '-4', _S: '-4', a: '-1', b: '2', c: '1', d: '-1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '0'
+  - !!python/tuple ['0', '28', '-1', '-1', '1', '1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=0 D1_N=28 a=-1 b=-1 c=1 d=1 e=1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '4', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/598",
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101_seg,
+    D1_MODEL_NAME: RESNET_SEG, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 0
+      28 -1 -1 1 1 1 1}
+  - {D1_N: '28', _S: '0', a: '-1', b: '-1', c: '1', d: '1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '1'
+  - !!python/tuple ['1', '25', '1', '-1', '-1', '1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=1 D1_N=25 a=1 b=-1 c=-1 d=1 e=1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '5', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/305",
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4_seg,
+    D1_MODEL_NAME: INCEPTION_SEG, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '305',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 1
+      25 1 -1 -1 1 1 1}
+  - {D1_N: '25', _S: '1', a: '1', b: '-1', c: '-1', d: '1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '2'
+  - !!python/tuple ['2', '0', '-1', '-1', '-1', '-1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=2 D1_N=0 a=-1 b=-1 c=-1 d=-1 e=-1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '6', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 2 0
+      -1 -1 -1 -1 -1 -1}
+  - {D1_N: '0', _S: '2', a: '-1', b: '-1', c: '-1', d: '-1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '3'
+  - !!python/tuple ['3', '8', '-1', '-1', '-1', '1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=3 D1_N=8 a=-1 b=-1 c=-1 d=1 e=-1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '7', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/305",
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101_seg,
+    D1_MODEL_NAME: RESNET_SEG, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '305',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 3
+      8 -1 -1 -1 1 -1 1}
+  - {D1_N: '8', _S: '3', a: '-1', b: '-1', c: '-1', d: '1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '4'
+  - !!python/tuple ['4', '26', '-1', '1', '-1', '1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=4 D1_N=26 a=-1 b=1 c=-1
+      d=1 e=1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '8', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/305", D1_MAX_NUMBER_OF_STEPS: '30000',
+    D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101_seg, D1_MODEL_NAME: RESNET_SEG,
+    D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '305', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 4 26 -1 1 -1 1 1 1}
+  - {D1_N: '26', _S: '4', a: '-1', b: '1', c: '-1', d: '1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '5'
+  - !!python/tuple ['5', '11', '1', '1', '-1', '1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=5 D1_N=11 a=1 b=1 c=-1
+      d=1 e=-1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '9', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/305", D1_MAX_NUMBER_OF_STEPS: '40000',
+    D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4_seg, D1_MODEL_NAME: INCEPTION_SEG,
+    D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '305', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 5 11 1 1 -1 1 -1 1}
+  - {D1_N: '11', _S: '5', a: '1', b: '1', c: '-1', d: '1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '6'
+  - !!python/tuple ['6', '3', '1', '1', '-1', '-1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=6 D1_N=3 a=1 b=1 c=-1 d=-1
+      e=-1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '10', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 6 3
+      1 1 -1 -1 -1 -1}
+  - {D1_N: '3', _S: '6', a: '1', b: '1', c: '-1', d: '-1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '7'
+  - !!python/tuple ['7', '15', '1', '1', '1', '1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=7 D1_N=15 a=1 b=1 c=1 d=1
+      e=-1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '11', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 7 15
+      1 1 1 1 -1 -1}
+  - {D1_N: '15', _S: '7', a: '1', b: '1', c: '1', d: '1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '8'
+  - !!python/tuple ['8', '27', '1', '1', '-1', '1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=8 D1_N=27 a=1 b=1 c=-1
+      d=1 e=1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '12', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 8 27
+      1 1 -1 1 1 -1}
+  - {D1_N: '27', _S: '8', a: '1', b: '1', c: '-1', d: '1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '9'
+  - !!python/tuple ['9', '18', '-1', '1', '-1', '-1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=9 D1_N=18 a=-1 b=1 c=-1
+      d=-1 e=1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '13', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 9 18
+      -1 1 -1 -1 1 -1}
+  - {D1_N: '18', _S: '9', a: '-1', b: '1', c: '-1', d: '-1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '10'
+  - !!python/tuple ['10', '6', '-1', '1', '1', '-1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=10 D1_N=6 a=-1 b=1 c=1
+      d=-1 e=-1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '14', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 10
+      6 -1 1 1 -1 -1 -1}
+  - {D1_N: '6', _S: '10', a: '-1', b: '1', c: '1', d: '-1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '11'
+  - !!python/tuple ['11', '12', '-1', '-1', '1', '1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=11 D1_N=12 a=-1 b=-1 c=1 d=1 e=-1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '15', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 11
+      12 -1 -1 1 1 -1 -1}
+  - {D1_N: '12', _S: '11', a: '-1', b: '-1', c: '1', d: '1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '12'
+  - !!python/tuple ['12', '31', '1', '1', '1', '1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=12 D1_N=31 a=1 b=1 c=1
+      d=1 e=1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '16', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/598", D1_MAX_NUMBER_OF_STEPS: '40000',
+    D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4_seg, D1_MODEL_NAME: INCEPTION_SEG,
+    D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 12 31 1 1 1 1 1 1}
+  - {D1_N: '31', _S: '12', a: '1', b: '1', c: '1', d: '1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '13'
+  - !!python/tuple ['13', '29', '1', '-1', '1', '1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=13 D1_N=29 a=1 b=-1 c=1 d=1 e=1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '17', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 13 29
+      1 -1 1 1 1 -1}
+  - {D1_N: '29', _S: '13', a: '1', b: '-1', c: '1', d: '1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '14'
+  - !!python/tuple ['14', '1', '1', '-1', '-1', '-1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=14 D1_N=1 a=1 b=-1 c=-1 d=-1 e=-1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '18', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/305",
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4_seg,
+    D1_MODEL_NAME: INCEPTION_SEG, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '305',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 14
+      1 1 -1 -1 -1 -1 1}
+  - {D1_N: '1', _S: '14', a: '1', b: '-1', c: '-1', d: '-1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '15'
+  - !!python/tuple ['15', '22', '-1', '1', '1', '-1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=15 D1_N=22 a=-1 b=1 c=1
+      d=-1 e=1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '19', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/598", D1_MAX_NUMBER_OF_STEPS: '30000',
+    D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101_seg, D1_MODEL_NAME: RESNET_SEG,
+    D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 15 22 -1 1 1 -1 1 1}
+  - {D1_N: '22', _S: '15', a: '-1', b: '1', c: '1', d: '-1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '16'
+  - !!python/tuple ['16', '9', '1', '-1', '-1', '1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=16 D1_N=9 a=1 b=-1 c=-1 d=1 e=-1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '20', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 16 9
+      1 -1 -1 1 -1 -1}
+  - {D1_N: '9', _S: '16', a: '1', b: '-1', c: '-1', d: '1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '17'
+  - !!python/tuple ['17', '13', '1', '-1', '1', '1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=17 D1_N=13 a=1 b=-1 c=1 d=1 e=-1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '21', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/598",
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4_seg,
+    D1_MODEL_NAME: INCEPTION_SEG, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 17
+      13 1 -1 1 1 -1 1}
+  - {D1_N: '13', _S: '17', a: '1', b: '-1', c: '1', d: '1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '18'
+  - !!python/tuple ['18', '19', '1', '1', '-1', '-1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=18 D1_N=19 a=1 b=1 c=-1
+      d=-1 e=1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '22', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/305", D1_MAX_NUMBER_OF_STEPS: '40000',
+    D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4_seg, D1_MODEL_NAME: INCEPTION_SEG,
+    D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '305', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 18 19 1 1 -1 -1 1 1}
+  - {D1_N: '19', _S: '18', a: '1', b: '1', c: '-1', d: '-1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '19'
+  - !!python/tuple ['19', '24', '-1', '-1', '-1', '1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=19 D1_N=24 a=-1 b=-1 c=-1 d=1 e=1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '23', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 19
+      24 -1 -1 -1 1 1 -1}
+  - {D1_N: '24', _S: '19', a: '-1', b: '-1', c: '-1', d: '1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '20'
+  - !!python/tuple ['20', '4', '-1', '-1', '1', '-1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=20 D1_N=4 a=-1 b=-1 c=1 d=-1 e=-1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '24', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/598",
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101_seg,
+    D1_MODEL_NAME: RESNET_SEG, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 20
+      4 -1 -1 1 -1 -1 1}
+  - {D1_N: '4', _S: '20', a: '-1', b: '-1', c: '1', d: '-1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '21'
+  - !!python/tuple ['21', '23', '1', '1', '1', '-1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=21 D1_N=23 a=1 b=1 c=1
+      d=-1 e=1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '25', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 21 23
+      1 1 1 -1 1 -1}
+  - {D1_N: '23', _S: '21', a: '1', b: '1', c: '1', d: '-1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '22'
+  - !!python/tuple ['22', '14', '-1', '1', '1', '1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=22 D1_N=14 a=-1 b=1 c=1
+      d=1 e=-1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '26', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/598", D1_MAX_NUMBER_OF_STEPS: '30000',
+    D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101_seg, D1_MODEL_NAME: RESNET_SEG,
+    D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 22 14 -1 1 1 1 -1 1}
+  - {D1_N: '14', _S: '22', a: '-1', b: '1', c: '1', d: '1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '23'
+  - !!python/tuple ['23', '20', '-1', '-1', '1', '-1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=23 D1_N=20 a=-1 b=-1 c=1 d=-1 e=1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '27', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 23
+      20 -1 -1 1 -1 1 -1}
+  - {D1_N: '20', _S: '23', a: '-1', b: '-1', c: '1', d: '-1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '24'
+  - !!python/tuple ['24', '7', '1', '1', '1', '-1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=24 D1_N=7 a=1 b=1 c=1 d=-1
+      e=-1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '28', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/598", D1_MAX_NUMBER_OF_STEPS: '40000',
+    D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4_seg, D1_MODEL_NAME: INCEPTION_SEG,
+    D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 24 7 1 1 1 -1 -1 1}
+  - {D1_N: '7', _S: '24', a: '1', b: '1', c: '1', d: '-1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '25'
+  - !!python/tuple ['25', '17', '1', '-1', '-1', '-1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=25 D1_N=17 a=1 b=-1 c=-1 d=-1 e=1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '29', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 25 17
+      1 -1 -1 -1 1 -1}
+  - {D1_N: '17', _S: '25', a: '1', b: '-1', c: '-1', d: '-1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '26'
+  - !!python/tuple ['26', '21', '1', '-1', '1', '-1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=26 D1_N=21 a=1 b=-1 c=1 d=-1 e=1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '30', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/598",
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4_seg,
+    D1_MODEL_NAME: INCEPTION_SEG, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 26
+      21 1 -1 1 -1 1 1}
+  - {D1_N: '21', _S: '26', a: '1', b: '-1', c: '1', d: '-1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '27'
+  - !!python/tuple ['27', '2', '-1', '1', '-1', '-1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=27 D1_N=2 a=-1 b=1 c=-1
+      d=-1 e=-1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '31', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/305", D1_MAX_NUMBER_OF_STEPS: '30000',
+    D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101_seg, D1_MODEL_NAME: RESNET_SEG,
+    D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '305', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 27 2 -1 1 -1 -1 -1 1}
+  - {D1_N: '2', _S: '27', a: '-1', b: '1', c: '-1', d: '-1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '28'
+  - !!python/tuple ['28', '30', '-1', '1', '1', '1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=28 D1_N=30 a=-1 b=1 c=1
+      d=1 e=1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '32', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 28
+      30 -1 1 1 1 1 -1}
+  - {D1_N: '30', _S: '28', a: '-1', b: '1', c: '1', d: '1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '29'
+  - !!python/tuple ['29', '5', '1', '-1', '1', '-1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=29 D1_N=5 a=1 b=-1 c=1 d=-1 e=-1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '33', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 29 5
+      1 -1 1 -1 -1 -1}
+  - {D1_N: '5', _S: '29', a: '1', b: '-1', c: '1', d: '-1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '30'
+  - !!python/tuple ['30', '10', '-1', '1', '-1', '1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=30 D1_N=10 a=-1 b=1 c=-1
+      d=1 e=-1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '34', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 30
+      10 -1 1 -1 1 -1 -1}
+  - {D1_N: '10', _S: '30', a: '-1', b: '1', c: '-1', d: '1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '31'
+  - !!python/tuple ['31', '16', '-1', '-1', '-1', '-1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=31 D1_N=16 a=-1 b=-1 c=-1 d=-1 e=1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '35', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/305",
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101_seg,
+    D1_MODEL_NAME: RESNET_SEG, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '305',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 31
+      16 -1 -1 -1 -1 1 1}
+  - {D1_N: '16', _S: '31', a: '-1', b: '-1', c: '-1', d: '-1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '32'
+  - !!python/tuple ['32', '32', '1', '-1', '-1', '-1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=32 D1_N=32 a=1 b=-1 c=-1 d=-1 e=-1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '36', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 32 32
+      1 -1 -1 -1 -1 -1}
+  - {D1_N: '32', _S: '32', a: '1', b: '-1', c: '-1', d: '-1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '33'
+  - !!python/tuple ['33', '61', '1', '1', '-1', '1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=33 D1_N=61 a=1 b=1 c=-1
+      d=1 e=1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '37', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/305", D1_MAX_NUMBER_OF_STEPS: '40000',
+    D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4_seg, D1_MODEL_NAME: INCEPTION_SEG,
+    D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '305', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 33 61 1 1 -1 1 1 1}
+  - {D1_N: '61', _S: '33', a: '1', b: '1', c: '-1', d: '1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '34'
+  - !!python/tuple ['34', '53', '-1', '1', '-1', '1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=34 D1_N=53 a=-1 b=1 c=-1
+      d=1 e=-1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '38', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/305", D1_MAX_NUMBER_OF_STEPS: '30000',
+    D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101_seg, D1_MODEL_NAME: RESNET_SEG,
+    D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '305', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 34 53 -1 1 -1 1 -1 1}
+  - {D1_N: '53', _S: '34', a: '-1', b: '1', c: '-1', d: '1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '35'
+  - !!python/tuple ['35', '41', '1', '1', '-1', '-1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=35 D1_N=41 a=1 b=1 c=-1
+      d=-1 e=1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '39', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 35 41
+      1 1 -1 -1 1 -1}
+  - {D1_N: '41', _S: '35', a: '1', b: '1', c: '-1', d: '-1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '36'
+  - !!python/tuple ['36', '46', '-1', '-1', '1', '1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=36 D1_N=46 a=-1 b=-1 c=1 d=1 e=1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '40', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 36
+      46 -1 -1 1 1 1 -1}
+  - {D1_N: '46', _S: '36', a: '-1', b: '-1', c: '1', d: '1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '37'
+  - !!python/tuple ['37', '48', '-1', '-1', '-1', '-1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=37 D1_N=48 a=-1 b=-1 c=-1 d=-1 e=-1
+      f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '41', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_challenge/305", D1_MAX_NUMBER_OF_STEPS: '30000',
+    D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101_seg, D1_MODEL_NAME: RESNET_SEG,
+    D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '305', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 37 48 -1 -1 -1 -1 -1 1}
+  - {D1_N: '48', _S: '37', a: '-1', b: '-1', c: '-1', d: '-1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '38'
+  - !!python/tuple ['38', '36', '-1', '-1', '-1', '1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=38 D1_N=36 a=-1 b=-1 c=-1 d=1 e=-1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '42', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 38
+      36 -1 -1 -1 1 -1 -1}
+  - {D1_N: '36', _S: '38', a: '-1', b: '-1', c: '-1', d: '1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '39'
+  - !!python/tuple ['39', '33', '-1', '1', '-1', '-1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=39 D1_N=33 a=-1 b=1 c=-1
+      d=-1 e=-1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '43', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 39
+      33 -1 1 -1 -1 -1 -1}
+  - {D1_N: '33', _S: '39', a: '-1', b: '1', c: '-1', d: '-1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '40'
+  - !!python/tuple ['40', '55', '1', '1', '1', '1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=40 D1_N=55 a=1 b=1 c=1
+      d=1 e=-1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '44', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/598", D1_MAX_NUMBER_OF_STEPS: '40000',
+    D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4_seg, D1_MODEL_NAME: INCEPTION_SEG,
+    D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 40 55 1 1 1 1 -1 1}
+  - {D1_N: '55', _S: '40', a: '1', b: '1', c: '1', d: '1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '41'
+  - !!python/tuple ['41', '51', '-1', '1', '1', '-1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=41 D1_N=51 a=-1 b=1 c=1
+      d=-1 e=-1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '45', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/598", D1_MAX_NUMBER_OF_STEPS: '30000',
+    D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101_seg, D1_MODEL_NAME: RESNET_SEG,
+    D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 41 51 -1 1 1 -1 -1 1}
+  - {D1_N: '51', _S: '41', a: '-1', b: '1', c: '1', d: '-1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '42'
+  - !!python/tuple ['42', '52', '1', '-1', '-1', '1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=42 D1_N=52 a=1 b=-1 c=-1 d=1 e=-1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '46', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/305",
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4_seg,
+    D1_MODEL_NAME: INCEPTION_SEG, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '305',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 42
+      52 1 -1 -1 1 -1 1}
+  - {D1_N: '52', _S: '42', a: '1', b: '-1', c: '-1', d: '1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '43'
+  - !!python/tuple ['43', '35', '1', '1', '1', '-1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=43 D1_N=35 a=1 b=1 c=1
+      d=-1 e=-1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '47', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 43 35
+      1 1 1 -1 -1 -1}
+  - {D1_N: '35', _S: '43', a: '1', b: '1', c: '1', d: '-1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '44'
+  - !!python/tuple ['44', '62', '1', '-1', '1', '1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=44 D1_N=62 a=1 b=-1 c=1 d=1 e=1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '48', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/598",
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4_seg,
+    D1_MODEL_NAME: INCEPTION_SEG, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 44
+      62 1 -1 1 1 1 1}
+  - {D1_N: '62', _S: '44', a: '1', b: '-1', c: '1', d: '1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '45'
+  - !!python/tuple ['45', '58', '-1', '-1', '1', '-1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=45 D1_N=58 a=-1 b=-1 c=1 d=-1 e=1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '49', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/598",
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101_seg,
+    D1_MODEL_NAME: RESNET_SEG, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 45
+      58 -1 -1 1 -1 1 1}
+  - {D1_N: '58', _S: '45', a: '-1', b: '-1', c: '1', d: '-1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '46'
+  - !!python/tuple ['46', '50', '1', '-1', '1', '-1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=46 D1_N=50 a=1 b=-1 c=1 d=-1 e=-1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '50', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/598",
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4_seg,
+    D1_MODEL_NAME: INCEPTION_SEG, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 46
+      50 1 -1 1 -1 -1 1}
+  - {D1_N: '50', _S: '46', a: '1', b: '-1', c: '1', d: '-1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '47'
+  - !!python/tuple ['47', '59', '1', '1', '1', '-1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=47 D1_N=59 a=1 b=1 c=1
+      d=-1 e=1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '51', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/598", D1_MAX_NUMBER_OF_STEPS: '40000',
+    D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4_seg, D1_MODEL_NAME: INCEPTION_SEG,
+    D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 47 59 1 1 1 -1 1 1}
+  - {D1_N: '59', _S: '47', a: '1', b: '1', c: '1', d: '-1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '48'
+  - !!python/tuple ['48', '45', '-1', '1', '-1', '1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=48 D1_N=45 a=-1 b=1 c=-1
+      d=1 e=1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '52', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 48
+      45 -1 1 -1 1 1 -1}
+  - {D1_N: '45', _S: '48', a: '-1', b: '1', c: '-1', d: '1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '49'
+  - !!python/tuple ['49', '44', '1', '-1', '-1', '1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=49 D1_N=44 a=1 b=-1 c=-1 d=1 e=1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '53', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 49 44
+      1 -1 -1 1 1 -1}
+  - {D1_N: '44', _S: '49', a: '1', b: '-1', c: '-1', d: '1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '50'
+  - !!python/tuple ['50', '63', '-1', '1', '1', '1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=50 D1_N=63 a=-1 b=1 c=1
+      d=1 e=1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '54', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/598", D1_MAX_NUMBER_OF_STEPS: '30000',
+    D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101_seg, D1_MODEL_NAME: RESNET_SEG,
+    D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 50 63 -1 1 1 1 1 1}
+  - {D1_N: '63', _S: '50', a: '-1', b: '1', c: '1', d: '1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '51'
+  - !!python/tuple ['51', '47', '1', '1', '1', '1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=51 D1_N=47 a=1 b=1 c=1
+      d=1 e=1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '55', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 51 47
+      1 1 1 1 1 -1}
+  - {D1_N: '47', _S: '51', a: '1', b: '1', c: '1', d: '1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '52'
+  - !!python/tuple ['52', '39', '-1', '1', '1', '1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=52 D1_N=39 a=-1 b=1 c=1
+      d=1 e=-1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '56', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 52
+      39 -1 1 1 1 -1 -1}
+  - {D1_N: '39', _S: '52', a: '-1', b: '1', c: '1', d: '1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '53'
+  - !!python/tuple ['53', '57', '-1', '1', '-1', '-1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=53 D1_N=57 a=-1 b=1 c=-1
+      d=-1 e=1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '57', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/305", D1_MAX_NUMBER_OF_STEPS: '30000',
+    D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101_seg, D1_MODEL_NAME: RESNET_SEG,
+    D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '305', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 53 57 -1 1 -1 -1 1 1}
+  - {D1_N: '57', _S: '53', a: '-1', b: '1', c: '-1', d: '-1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '54'
+  - !!python/tuple ['54', '49', '1', '1', '-1', '-1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=54 D1_N=49 a=1 b=1 c=-1
+      d=-1 e=-1 f=1, D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '58', D1_MASKS_SOURCE: --masks_dir
+      "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/305", D1_MAX_NUMBER_OF_STEPS: '40000',
+    D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4_seg, D1_MODEL_NAME: INCEPTION_SEG,
+    D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '305', D1_SEG: -seg, D1_SEGMENTED: 'Yes',
+    D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 54 49 1 1 -1 -1 -1 1}
+  - {D1_N: '49', _S: '54', a: '1', b: '1', c: '-1', d: '-1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '55'
+  - !!python/tuple ['55', '34', '-1', '-1', '1', '-1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=55 D1_N=34 a=-1 b=-1 c=1 d=-1 e=-1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '59', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 55
+      34 -1 -1 1 -1 -1 -1}
+  - {D1_N: '34', _S: '55', a: '-1', b: '-1', c: '1', d: '-1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '56'
+  - !!python/tuple ['56', '56', '1', '-1', '-1', '-1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=56 D1_N=56 a=1 b=-1 c=-1 d=-1 e=1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '60', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/305",
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4_seg,
+    D1_MODEL_NAME: INCEPTION_SEG, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '305',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 56
+      56 1 -1 -1 -1 1 1}
+  - {D1_N: '56', _S: '56', a: '1', b: '-1', c: '-1', d: '-1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '57'
+  - !!python/tuple ['57', '54', '-1', '-1', '1', '1', '-1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=57 D1_N=54 a=-1 b=-1 c=1 d=1 e=-1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '61', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/598",
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101_seg,
+    D1_MODEL_NAME: RESNET_SEG, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 57
+      54 -1 -1 1 1 -1 1}
+  - {D1_N: '54', _S: '57', a: '-1', b: '-1', c: '1', d: '1', e: '-1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '58'
+  - !!python/tuple ['58', '60', '-1', '-1', '-1', '1', '1', '1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=58 D1_N=60 a=-1 b=-1 c=-1 d=1 e=1 f=1,
+    D1_IGNORE_MISSING_VARS: 'True', D1_INDEX: '62', D1_MASKS_SOURCE: --masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/305",
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.20', D1_MODEL: resnet_v2_101_seg,
+    D1_MODEL_NAME: RESNET_SEG, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '305',
+    D1_SEG: -seg, D1_SEGMENTED: 'Yes', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 58
+      60 -1 -1 -1 1 1 1}
+  - {D1_N: '60', _S: '58', a: '-1', b: '-1', c: '-1', d: '1', e: '1', f: '1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '59'
+  - !!python/tuple ['59', '37', '1', '1', '-1', '1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=59 D1_N=37 a=1 b=1 c=-1
+      d=1 e=-1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '63', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 59 37
+      1 1 -1 1 -1 -1}
+  - {D1_N: '37', _S: '59', a: '1', b: '1', c: '-1', d: '1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '60'
+  - !!python/tuple ['60', '38', '1', '-1', '1', '1', '-1', '-1']
+  - {D1_ADD_ROTATIONS: 'True', D1_AGGRESSIVE_AUGMENTATION: 'True', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=60 D1_N=38 a=1 b=-1 c=1 d=1 e=-1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '64', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.20', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '0', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 60 38
+      1 -1 1 1 -1 -1}
+  - {D1_N: '38', _S: '60', a: '1', b: '-1', c: '1', d: '1', e: '-1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '61'
+  - !!python/tuple ['61', '43', '-1', '1', '1', '-1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: fulltrain, D1_DATASET_TEST_SOURCE: --test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv,
+    D1_DATASET_TRAIN_SOURCE: --train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv,
+    D1_FACTORS: _S D1_N a b c d e f, D1_FACTORS_LEVELS: _S=61 D1_N=43 a=-1 b=1 c=1
+      d=-1 e=1 f=-1, D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '65', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 61
+      43 -1 1 1 -1 1 -1}
+  - {D1_N: '43', _S: '61', a: '-1', b: '1', c: '1', d: '-1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '62'
+  - !!python/tuple ['62', '42', '1', '-1', '1', '-1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: 'InceptionV4/Logits,InceptionV4/AuxLogits',
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=62 D1_N=42 a=1 b=-1 c=1 d=-1 e=1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '66', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '40000', D1_MINIMUM_AREA: '0.05', D1_MODEL: inception_v4,
+    D1_MODEL_NAME: INCEPTION, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '598', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: inception_v4.ckpt, D1_TREATMENT: 62 42
+      1 -1 1 -1 1 -1}
+  - {D1_N: '42', _S: '62', a: '1', b: '-1', c: '1', d: '-1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+- !!python/tuple
+  - '63'
+  - !!python/tuple ['63', '40', '-1', '-1', '-1', '-1', '1', '-1']
+  - {D1_ADD_ROTATIONS: 'False', D1_AGGRESSIVE_AUGMENTATION: 'False', D1_CHECKPOINT_EXCLUDE_SCOPES: resnet_v2_101/logits,
+    D1_DATASET_NAME: challenge-train, D1_DATASET_TEST_SOURCE: '', D1_DATASET_TRAIN_SOURCE: --train
+      $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv, D1_FACTORS: _S
+      D1_N a b c d e f, D1_FACTORS_LEVELS: _S=63 D1_N=40 a=-1 b=-1 c=-1 d=-1 e=1 f=-1,
+    D1_IGNORE_MISSING_VARS: 'False', D1_INDEX: '67', D1_MASKS_SOURCE: --do_not_create_masks_dir,
+    D1_MAX_NUMBER_OF_STEPS: '30000', D1_MINIMUM_AREA: '0.05', D1_MODEL: resnet_v2_101,
+    D1_MODEL_NAME: RESNET, D1_NORMALIZE_PER_IMAGE: '1', D1_RESOLUTION: '299', D1_SEG: '',
+    D1_SEGMENTED: 'No', D1_START_CHECKPOINT: resnet_v2_101.ckpt, D1_TREATMENT: 63
+      40 -1 -1 -1 -1 1 -1}
+  - {D1_N: '40', _S: '63', a: '-1', b: '-1', c: '-1', d: '-1', e: '1', f: '-1'}
+  - 'echo -e ''\n\nThis is not a stand-alone script !\n\n'' >&2
+
+    exit 1
+
+    '
+ALL_FACTORS: [_S, D1_N, a, b, c, d, e, f]
+ALL_FACTORS_LEVELS:
+  D1_N: null
+  _S: null
+  a: !!set {'-1': null, '1': null}
+  b: !!set {'-1': null, '1': null, '2': null}
+  c: !!set {'-1': null, '1': null}
+  d: !!set {'-1': null, '1': null}
+  e: !!set {'-1': null, '1': null}
+  f: !!set {'-1': null, '1': null}
+ALL_VARIABLES: !!set {D1_ADD_ROTATIONS: null, D1_AGGRESSIVE_AUGMENTATION: null, D1_CHECKPOINT_EXCLUDE_SCOPES: null,
+  D1_DATASET_NAME: null, D1_DATASET_TEST_SOURCE: null, D1_DATASET_TRAIN_SOURCE: null,
+  D1_IGNORE_MISSING_VARS: null, D1_MASKS_SOURCE: null, D1_MAX_NUMBER_OF_STEPS: null,
+  D1_MINIMUM_AREA: null, D1_MODEL: null, D1_MODEL_NAME: null, D1_NORMALIZE_PER_IMAGE: null,
+  D1_RESOLUTION: null, D1_SEG: null, D1_SEGMENTED: null, D1_START_CHECKPOINT: null}
+SHELL: /bin/bash
+VERSION: 0.0.0000
+

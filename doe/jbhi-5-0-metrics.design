@@ -1,0 +1,25 @@
+# Step 5-0 / D5_ - Metrics extraction
+# Design dependencies => 1-0 => 3-0 => 4-0 => 5-0
+IMPORT | jbhi-4-0-test
+
+DESIGN
+D5_N : ANY  # Experiment number (sequence before randomization)
+
+# ===============================================================
+# Dummy design - just replicates imports adding new variable
+# Generator: j
+[D5_N]
+[   0]
+# ===============================================================
+
+SELECT ALL
+
+PREFIX |D5_
+
+SHELL
+|/bin/bash
+
+SCRIPT
+echo -e '\n\nThis is not a stand-alone script !\n\n' >&2
+exit 1
+/SCRIPT

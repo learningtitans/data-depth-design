@@ -1,0 +1,50 @@
+FACTORS: [a, b, c, d, e, f]
+MAP:
+- !!python/tuple
+  - !!python/tuple ['-1', '2', '-1', '-1', '-1', '-1']
+  - experiment_0.run.sh
+  - 0
+- !!python/tuple
+  - !!python/tuple ['-1', '2', '-1', '-1', '-1', '1']
+  - experiment_1.run.sh
+  - 1
+- !!python/tuple
+  - !!python/tuple ['-1', '2', '1', '-1', '-1', '-1']
+  - experiment_2.run.sh
+  - 2
+- !!python/tuple
+  - !!python/tuple ['-1', '2', '1', '-1', '-1', '1']
+  - experiment_3.run.sh
+  - 3
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '1', '1', '1', '1']
+  - experiment_4.run.sh
+  - 4
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '-1', '1', '1', '1']
+  - experiment_5.run.sh
+  - 5
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '-1', '-1', '-1', '-1']
+  - experiment_6.run.sh
+  - 6
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '-1', '1', '1', '1']
+  - experiment_7.run.sh
+  - 7
+- !!python/tuple
+  - !!python/tuple ['1', '1', '-1', '-1', '-1', '-1']
+  - experiment_8.run.sh
+  - 8
+- !!python/tuple
+  - !!python/tuple ['1', '1', '1', '1', '-1', '-1']
+  - experiment_9.run.sh
+  - 9
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '1', '1', '-1', '-1']
+  - experiment_10.run.sh
+  - 10
+- !!python/tuple
+  - !!python/tuple ['1', '1', '1', '1', '1', '1']
+  - experiment_11.run.sh
+  - 11

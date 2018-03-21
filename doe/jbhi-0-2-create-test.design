@@ -1,0 +1,26 @@
+# Step 0-2 / CREATE_ - Creates the test datasets
+# Design dependencies => 1-0 => 3-0 => 4-0 => 0-2
+# Actual running order dependencies => None
+IMPORT | jbhi-4-0-test
+       "^_S$"                => "_S"
+       "^D1_N$"              => ""
+       "^D1_INDEX$"          => "D1_INDEX"
+       "^D1_TREATMENT$"      => ""
+       "^D1_FACTORS$"        => ""
+       "^D1_FACTORS_LEVELS$" => ""
+       "^D1_DATASET_"        => "CREATE_TRAIN_"
+       "^D1_"                => "CREATE_"
+       "^D4_"                => "CREATE_"
+
+DESIGN
+
+PREFIX | CREATE_
+
+SELECT j!=0 # The split --test was already created on create-train
+
+FIRST j c f
+
+SHELL
+|/bin/bash
+
+SCRIPT_FROM | jbhi-0-0-create-dataset

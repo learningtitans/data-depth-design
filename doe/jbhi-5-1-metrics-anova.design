@@ -1,0 +1,15 @@
+# Step 5-1 / D5_ - Metrics extraction
+# Design dependencies => 1-0 => 3-0 => 4-0 => 5-0 => 5-1
+IMPORT | jbhi-5-0-metrics
+
+DESIGN
+
+# Filters out debug treatments => *_N>=0
+SELECT D1_N>=0 AND D3_N>=0 AND D4_N>=0 AND D5_N>=0
+
+PREFIX |D5_1_
+
+SHELL
+|/bin/bash
+
+SCRIPT_FROM | jbhi-5-1-metrics-anova

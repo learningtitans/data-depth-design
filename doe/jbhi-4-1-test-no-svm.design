@@ -1,0 +1,17 @@
+# Step 4-1 / D4_1_ - Test without SVM Layer
+# Design dependencies => 1-0 => 3-0 => 4-0 => 4-1
+# Actual running order dependencies => 0-1 => 1-2 => 4-1
+IMPORT | jbhi-4-0-test
+
+DESIGN
+
+# Only the experiments without SVM intermediate layer => h=-1
+# Filters out debug treatments => *_N>=0
+SELECT D1_N>=0 AND D3_N>=0 AND D4_N>=0 AND h=-1
+
+PREFIX | D4_1_
+
+SHELL
+|/bin/bash
+
+SCRIPT_FROM | jbhi-4-1-test-no-svm

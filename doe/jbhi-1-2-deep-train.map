@@ -1,0 +1,258 @@
+FACTORS: [a, b, c, d, e, f]
+MAP:
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '1', '1', '1', '1']
+  - experiment_0.run.sh
+  - 0
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '-1', '1', '1', '1']
+  - experiment_1.run.sh
+  - 1
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '-1', '-1', '-1', '-1']
+  - experiment_2.run.sh
+  - 2
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '-1', '1', '-1', '1']
+  - experiment_3.run.sh
+  - 3
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '-1', '1', '1', '1']
+  - experiment_4.run.sh
+  - 4
+- !!python/tuple
+  - !!python/tuple ['1', '1', '-1', '1', '-1', '1']
+  - experiment_5.run.sh
+  - 5
+- !!python/tuple
+  - !!python/tuple ['1', '1', '-1', '-1', '-1', '-1']
+  - experiment_6.run.sh
+  - 6
+- !!python/tuple
+  - !!python/tuple ['1', '1', '1', '1', '-1', '-1']
+  - experiment_7.run.sh
+  - 7
+- !!python/tuple
+  - !!python/tuple ['1', '1', '-1', '1', '1', '-1']
+  - experiment_8.run.sh
+  - 8
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '-1', '-1', '1', '-1']
+  - experiment_9.run.sh
+  - 9
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '1', '-1', '-1', '-1']
+  - experiment_10.run.sh
+  - 10
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '1', '1', '-1', '-1']
+  - experiment_11.run.sh
+  - 11
+- !!python/tuple
+  - !!python/tuple ['1', '1', '1', '1', '1', '1']
+  - experiment_12.run.sh
+  - 12
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '1', '1', '1', '-1']
+  - experiment_13.run.sh
+  - 13
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '-1', '-1', '-1', '1']
+  - experiment_14.run.sh
+  - 14
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '1', '-1', '1', '1']
+  - experiment_15.run.sh
+  - 15
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '-1', '1', '-1', '-1']
+  - experiment_16.run.sh
+  - 16
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '1', '1', '-1', '1']
+  - experiment_17.run.sh
+  - 17
+- !!python/tuple
+  - !!python/tuple ['1', '1', '-1', '-1', '1', '1']
+  - experiment_18.run.sh
+  - 18
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '-1', '1', '1', '-1']
+  - experiment_19.run.sh
+  - 19
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '1', '-1', '-1', '1']
+  - experiment_20.run.sh
+  - 20
+- !!python/tuple
+  - !!python/tuple ['1', '1', '1', '-1', '1', '-1']
+  - experiment_21.run.sh
+  - 21
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '1', '1', '-1', '1']
+  - experiment_22.run.sh
+  - 22
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '1', '-1', '1', '-1']
+  - experiment_23.run.sh
+  - 23
+- !!python/tuple
+  - !!python/tuple ['1', '1', '1', '-1', '-1', '1']
+  - experiment_24.run.sh
+  - 24
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '-1', '-1', '1', '-1']
+  - experiment_25.run.sh
+  - 25
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '1', '-1', '1', '1']
+  - experiment_26.run.sh
+  - 26
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '-1', '-1', '-1', '1']
+  - experiment_27.run.sh
+  - 27
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '1', '1', '1', '-1']
+  - experiment_28.run.sh
+  - 28
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '1', '-1', '-1', '-1']
+  - experiment_29.run.sh
+  - 29
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '-1', '1', '-1', '-1']
+  - experiment_30.run.sh
+  - 30
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '-1', '-1', '1', '1']
+  - experiment_31.run.sh
+  - 31
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '-1', '-1', '-1', '-1']
+  - experiment_32.run.sh
+  - 32
+- !!python/tuple
+  - !!python/tuple ['1', '1', '-1', '1', '1', '1']
+  - experiment_33.run.sh
+  - 33
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '-1', '1', '-1', '1']
+  - experiment_34.run.sh
+  - 34
+- !!python/tuple
+  - !!python/tuple ['1', '1', '-1', '-1', '1', '-1']
+  - experiment_35.run.sh
+  - 35
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '1', '1', '1', '-1']
+  - experiment_36.run.sh
+  - 36
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '-1', '-1', '-1', '1']
+  - experiment_37.run.sh
+  - 37
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '-1', '1', '-1', '-1']
+  - experiment_38.run.sh
+  - 38
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '-1', '-1', '-1', '-1']
+  - experiment_39.run.sh
+  - 39
+- !!python/tuple
+  - !!python/tuple ['1', '1', '1', '1', '-1', '1']
+  - experiment_40.run.sh
+  - 40
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '1', '-1', '-1', '1']
+  - experiment_41.run.sh
+  - 41
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '-1', '1', '-1', '1']
+  - experiment_42.run.sh
+  - 42
+- !!python/tuple
+  - !!python/tuple ['1', '1', '1', '-1', '-1', '-1']
+  - experiment_43.run.sh
+  - 43
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '1', '1', '1', '1']
+  - experiment_44.run.sh
+  - 44
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '1', '-1', '1', '1']
+  - experiment_45.run.sh
+  - 45
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '1', '-1', '-1', '1']
+  - experiment_46.run.sh
+  - 46
+- !!python/tuple
+  - !!python/tuple ['1', '1', '1', '-1', '1', '1']
+  - experiment_47.run.sh
+  - 47
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '-1', '1', '1', '-1']
+  - experiment_48.run.sh
+  - 48
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '-1', '1', '1', '-1']
+  - experiment_49.run.sh
+  - 49
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '1', '1', '1', '1']
+  - experiment_50.run.sh
+  - 50
+- !!python/tuple
+  - !!python/tuple ['1', '1', '1', '1', '1', '-1']
+  - experiment_51.run.sh
+  - 51
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '1', '1', '-1', '-1']
+  - experiment_52.run.sh
+  - 52
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '-1', '-1', '1', '1']
+  - experiment_53.run.sh
+  - 53
+- !!python/tuple
+  - !!python/tuple ['1', '1', '-1', '-1', '-1', '1']
+  - experiment_54.run.sh
+  - 54
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '1', '-1', '-1', '-1']
+  - experiment_55.run.sh
+  - 55
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '-1', '-1', '1', '1']
+  - experiment_56.run.sh
+  - 56
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '1', '1', '-1', '1']
+  - experiment_57.run.sh
+  - 57
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '-1', '1', '1', '1']
+  - experiment_58.run.sh
+  - 58
+- !!python/tuple
+  - !!python/tuple ['1', '1', '-1', '1', '-1', '-1']
+  - experiment_59.run.sh
+  - 59
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '1', '1', '-1', '-1']
+  - experiment_60.run.sh
+  - 60
+- !!python/tuple
+  - !!python/tuple ['-1', '1', '1', '-1', '1', '-1']
+  - experiment_61.run.sh
+  - 61
+- !!python/tuple
+  - !!python/tuple ['1', '-1', '1', '-1', '1', '-1']
+  - experiment_62.run.sh
+  - 62
+- !!python/tuple
+  - !!python/tuple ['-1', '-1', '-1', '-1', '1', '-1']
+  - experiment_63.run.sh
+  - 63

@@ -1,0 +1,407 @@
+HEAD-NECK
+atlas	head-neck
+location	Head/Neck
+quantloc	head & neck
+
+HEAD-NECK.HEAD
+anatom_site_general	head
+anatomic	preauricular
+localization	l post auricular
+localization	r postauricular
+localization	r preauricular
+
+HEAD-NECK.HEAD.SCALP
+anatomic	scalp
+anatomic	temple
+localization	l parietal scalp
+localization	l scalp
+localization	l temple
+localization	occipital scalp
+localization	r parietal scalp
+localization	r temple
+localization	scalp
+Location	scalp
+
+HEAD-NECK.HEAD.FACE
+anatomic	ala
+anatomic	auricular
+anatomic	cheek
+anatomic	chin
+anatomic	eye
+anatomic	eyelid
+anatomic	forehead
+anatomic	glabella
+anatomic	jaw
+anatomic	jawline
+anatomic	lip
+anatomic	mandible
+anatomic	nasal
+anatomic	nasolabial
+anatomic	nose
+localization	cheek
+localization	Face
+localization	forehead
+localization	l cheek
+localization	l chin
+localization	l forehead
+localization	l mandible
+localization	l nose
+localization	left cheek
+localization	left corner of mouth
+localization	r cheek
+localization	r eyebrow
+localization	r forehead
+localization	r mid anterior cheek
+localization	r nose
+localization	r parietal scalp
+localization	right cheek
+localization	tip of nose
+localization	upper lip
+Location	left cheek
+Location	left forehead
+Location	right nose
+
+HEAD-NECK.HEAD.FACE.EARS
+anatomic	ear
+localization	l ear
+localization	r posterior earlobe
+Location	left antitragus
+
+HEAD-NECK.NECK
+anatomic	neck
+localization	anterior neck
+localization	base anterior neck
+localization	l neck
+localization	nuchal
+localization	posterior neck
+localization	r base neck
+localization	r neck
+localization	r nuchal
+
+TRUNK
+anatom_site_general	trunk
+anatomic	trunk
+
+TRUNK.BACK
+anatom_site_general	posterior trunk
+anatomic	back
+anatomic	scapula
+anatomic	shoulder
+atlas	back
+localization	Back
+localization	back
+localization	back, interscapular
+localization	interscapular
+localization	l back
+localization	l interscapular
+localization	l intrascapular
+localization	l lateral back
+localization	l lateral lumbar
+localization	l low posterior thorax
+localization	l lower back
+localization	l lumbar
+localization	l lumbar caudad
+localization	l lumbar cephalad
+localization	l posterior shoulder
+localization	l posterior thorax
+localization	l scapular
+localization	l shoulder
+localization	l suprascapular
+localization	l upper back
+localization	left shoulder
+localization	left upper back
+localization	lower back
+localization	lumbar
+localization	medial upper back
+localization	mid back
+localization	mid lumbar
+localization	mid scapula
+localization	posterior thorax
+localization	r back
+localization	r low posterior thorax
+localization	r lower back
+localization	r lower posterior thorax
+localization	r lower thorax
+localization	r lumbar
+localization	r posterior lower thorax
+localization	r posterior shoulder
+localization	r posterior thorax
+localization	r scapular
+localization	r scapular caudad
+localization	r scapular cephalad
+localization	r shoulder
+localization	r subscapular
+localization	r suprascapular
+localization	r thorax
+localization	r upper back
+localization	right shoulder
+localization	scapula
+localization	scapular
+localization	shoulder
+localization	upper back
+location	Back
+Location	left lower back
+Location	left posterior shoulder
+Location	left shoulder
+Location	left upper back
+Location	left upper back medial
+Location	lt back
+Location	midback
+Location	Middle back
+Location	middle back
+Location	right ant shoulder
+Location	right lateral back
+Location	right shoulder/upper arm
+Location	right upper back
+Location	right upper back lateral
+quantloc	back
+
+TRUNK.BACK.BUTTOCKS
+anatomic	buttock
+anatomic	hip
+atlas	buttocks
+localization	buttock
+localization	l buttock
+localization	l iliac crest
+localization	mid sacrum
+localization	r buttock
+localization	r hip
+localization	r lateral thorax
+location	Buttock
+Location	left buttock
+quantloc	buttock
+
+TRUNK.ANTERIOR
+anatom_site_general	anterior trunk
+localization	l anterior thorax
+localization	r anterior thorax
+
+TRUNK.ANTERIOR.CHEST
+anatomic	breast
+anatomic	chest
+anatomic	clavicle
+anatomic	sternum
+atlas	chest
+localization	anterior chest
+localization	areola
+localization	Breast
+localization	chest
+localization	Chest
+localization	l anterior chest
+localization	l anterior shoulder
+localization	l areola
+localization	l breast
+localization	l chest
+localization	l clavicle
+localization	l lateral chest
+localization	l subclavicular
+localization	l submammary
+localization	l supraclavicular
+localization	l suprapubic
+localization	left breast
+localization	left clavicle
+localization	medial chest
+localization	mid chest
+localization	mid sternum
+localization	r anterior chest
+localization	r anterior shoulder
+localization	r breast
+localization	r chest
+localization	r clavicle
+localization	r clavicular
+localization	r interscapular
+localization	r lateral chest
+localization	r low chest
+localization	r subclavicular
+localization	right breast
+localization	sternum
+location	Chest
+Location	left chest
+Location	left inferior sternum
+Location	mid chest
+Location	right breast
+quantloc	chest
+
+TRUNK.ANTERIOR.ABDOMEN
+anatomic	abdomen
+atlas	abdomen
+localization	abdomen
+localization	Abdomen
+localization	abdomen
+localization	l abdomen
+localization	l lateral abdomen
+localization	l upper abdomen
+localization	lower abdomen
+localization	mid abdomen
+localization	r abdomen
+localization	r lateral abdomen
+localization	r lower abdomen
+localization	r upper abdomen
+location	Abdomen
+Location	mid abdomen
+Location	Rt abdomen
+quantloc	abdomen
+
+TRUNK.FLANK
+anatom_site_general	lateral trunk
+anatomic	flank
+localization	flank
+localization	l flank
+localization	l lateral thorax
+localization	lateral chest
+localization	lateral thorax
+localization	left flank
+localization	right flank
+Location	right upper flank
+
+GROIN-PUBIS
+anatomic	inguinal
+anatomic	pubic
+atlas	genital area
+localization	l groin
+localization	left groin
+localization	Pubis
+localization	r groin
+localization	r pubis
+localization	right groin
+Location	right groin
+
+LIMBS
+anatom_site_general	extremities
+anatom_site_general	lower extremity
+anatom_site_general	upper extremity
+location	Lower Extremities
+location	Upper Extremities
+quantloc	lower ext
+quantloc	upper ext
+
+LIMBS.ACRAL
+anatomic	sole
+atlas	acral
+localization	left palm,
+localization	left sole
+localization	r plantar foot
+localization	r sole
+localization	right sole
+location	Acral
+Location	right palm
+quantloc	acral
+
+LIMBS.LEGS
+anatomic	ankle
+anatomic	calf
+anatomic	knee
+anatomic	leg
+anatomic	shin
+anatomic	thigh
+anatomic	tibia
+atlas	lower limbs
+localization	knee
+localization	l ankle
+localization	l anterior thigh
+localization	l calf
+localization	l knee
+localization	l lateral calf
+localization	l lateral thigh
+localization	l leg
+localization	l medial thigh
+localization	l posterior calf
+localization	l posterior thigh
+localization	l thigh
+localization	left calf
+localization	left lower leg
+localization	leg
+localization	lower limb
+localization	Lower limb
+localization	r ankle
+localization	r anterior leg
+localization	r anterior lower leg
+localization	r anterior thigh
+localization	r calf
+localization	r knee
+localization	r leg
+localization	r lower leg
+localization	r medial leg
+localization	r posterior calf
+localization	r posterior knee
+localization	r posterior lower leg
+localization	r posterior thigh
+localization	r shin
+localization	r thigh
+localization	right anckle
+localization	right calf
+localization	right lower leg
+localization	right thigh
+localization	Thigh
+localization	thigh
+Location	left anterior lower leg
+Location	left calf
+Location	left inner thigh
+Location	left leg
+Location	left lower leg (calf)
+Location	left lower leg
+Location	left popliteal superior
+Location	left thigh
+Location	right anterior thigh
+Location	right calf
+Location	right lower leg
+
+LIMBS.LEGS.FEET
+anatom_site_general	foot
+anatomic	foot
+anatomic	toe
+localization	big toe, left foot
+localization	foot dorsum
+localization	heel
+localization	l big toe
+localization	l foot
+localization	l heel
+localization	r 4th toe
+localization	r foot
+localization	r little toe
+localization	r small toe
+Location	right medial foot
+
+LIMBS.ARMS
+anatomic	arm
+anatomic	axilla
+anatomic	elbow
+anatomic	forearm
+anatomic	wrist
+atlas	upper limbs
+localization	arm
+localization	forearm
+localization	l arm
+localization	l axilla
+localization	l forearm
+localization	l lateral arm
+localization	l proximal arm
+localization	l upper arm
+localization	left upper arm
+localization	r arm
+localization	r axilla
+localization	r elbow
+localization	r forearm
+localization	r upper arm
+localization	r wrist
+localization	right elbow
+localization	right upper arm
+localization	Upper limb
+Location	L upper arm
+Location	left post upper arm
+Location	left upper arm
+Location	posterior right arm
+Location	right forearm
+
+LIMBS.ARMS.HANDS
+anatom_site_general	hand
+localization	dorsal r hand
+localization	l index finger
+localization	l wrist
+localization	r hand
+
+OTHER
+anatomic	fossa
+anatomic	lateral
+anatomic	line
+

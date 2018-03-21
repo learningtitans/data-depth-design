@@ -1,0 +1,16 @@
+# Step 1-2 / D2_  - Trains the deep-learning models
+# Design dependencies => 1-0 => 1-2
+# Actual running order dependencies => 0-1 => 1-2
+
+IMPORT | jbhi-1-0-deep
+
+DESIGN
+
+PREFIX | D2_
+
+SELECT D1_N>=0 # Filters out debug treatments
+
+SHELL
+|/bin/bash
+
+SCRIPT_FROM | jbhi-1-2-deep-train

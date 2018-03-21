@@ -1,0 +1,79 @@
+# Step 4-0 / D4_ - Feature extraction for SVM
+# Design dependencies => 1-0 => 3-0 => 4-0
+IMPORT | jbhi-3-0-last-layer
+
+DESIGN
+D4_N : ANY  # Experiment number (sequence before randomization)
+
+  j : # Test dataset
+  0   # split --test from fulltrain
+  1   # validation set from ISIC
+  2   # test set from ISIC
+  3   # edraAtlas Dermoscopic
+  4   # edraAtlas Clinical
+  5   # debug test with portoPH2+edinburghDermofit only
+
+# ===============================================================
+# Full factorial
+# Generator: j
+[D4_N  j]
+# "Fake" runs to generate the debug datasets:
+[  -1  5]
+# Full factorial design:
+[   1  1]
+[   0  0]
+[   3  3]
+[   2  2]
+[   4  4]
+# No aliasing after this round
+# ===============================================================
+
+SELECT ALL
+
+PREFIX |D4_
+
+# ========================================
+# Decides the training dataset details
+#
+# b - Test dataset
+FACTORS
+     j :
+     0 =>
+        D4_DATASET_NAME=|fulltrain
+        D4_DATASET_TRAIN_SOURCE=|--dont_create_train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv
+        D4_DATASET_TEST_SOURCE =|--_dont_create_test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv
+        D4_GROUND_TRUTH        =                    |$HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv
+     1 =>
+        D4_DATASET_NAME=|challenge-val
+        D4_DATASET_TRAIN_SOURCE=|
+        D4_DATASET_TEST_SOURCE =|--test $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-validation.csv
+        D4_GROUND_TRUTH        =       |$HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-validation.csv
+     2 =>
+        D4_DATASET_NAME=|challenge-test
+        D4_DATASET_TRAIN_SOURCE=|
+        D4_DATASET_TEST_SOURCE =|--test $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-test.csv
+        D4_GROUND_TRUTH        =       |$HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-test.csv
+     3 =>
+        D4_DATASET_NAME=|edra-dermoscopic
+        D4_DATASET_TRAIN_SOURCE=|
+        D4_DATASET_TEST_SOURCE =|--test $HOME/jbhi-special-issue/skinLesions/splits/edraAtlas-dermoscopic.csv
+        D4_GROUND_TRUTH        =       |$HOME/jbhi-special-issue/skinLesions/splits/edraAtlas-dermoscopic.csv
+     4 =>
+        D4_DATASET_NAME=|edra-clinical
+        D4_DATASET_TRAIN_SOURCE=|
+        D4_DATASET_TEST_SOURCE =|--test $HOME/jbhi-special-issue/skinLesions/splits/edraAtlas-clinical.csv
+        D4_GROUND_TRUTH        =       |$HOME/jbhi-special-issue/skinLesions/splits/edraAtlas-clinical.csv
+     5 =>
+        D4_DATASET_NAME=|porto-edinburgh
+        D4_DATASET_TRAIN_SOURCE=|
+        D4_DATASET_TEST_SOURCE =|--test $HOME/jbhi-special-issue/skinLesions/splits/porto-edinburgh.csv
+        D4_GROUND_TRUTH        =       |$HOME/jbhi-special-issue/skinLesions/splits/porto-edinburgh.csv
+
+SHELL
+|/bin/bash
+
+SCRIPT
+echo -e '\n\nThis is not a stand-alone script !\n\n' >&2
+exit 1
+/SCRIPT
+

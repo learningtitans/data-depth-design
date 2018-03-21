@@ -1,0 +1,17 @@
+# Step 4-2 / D4_2_ - Test with SVM Layer
+# Design dependencies => 1-0 => 3-0 => 4-0 => 4-2
+# Actual running order dependencies => 0-1 => 1-2 => 3-1 => 3-2 => 4-2
+IMPORT | jbhi-4-0-test
+
+DESIGN
+
+# Only the experiments with SVM intermediate layer => h=1
+# Filters out debug treatments => *_N>=0
+SELECT D1_N>=0 AND D3_N>=0 AND D4_N>=0 AND h=1
+
+PREFIX | D4_2_
+
+SHELL
+|/bin/bash
+
+SCRIPT_FROM | jbhi-4-2-test-svm

@@ -1,0 +1,58 @@
+1.	Benign
+1.1.	Melanocytic Nevus (mole)
+1.1.	Nevus
+1.1.	nevus
+1.1.1.	Common Nevus
+1.1.1.1.	Dermal nevus
+1.1.1.1.	Intradermal Nevus
+1.1.2.	Congenital nevus
+1.1.3.	Atypical Nevus
+1.1.3.	Clark nevus
+1.1.3.	Dysplastic Nevus
+1.1.4.	Combined nevus
+1.1.5.	Blue Nevus
+1.1.5.	Blue nevus
+1.1.6.	Recurrent nevus
+1.1.7.	Reed/Spitz nevus
+1.2.	Dermatofibroma
+1.2.	dermatofibroma
+1.3.	Lentigo
+1.3.1.	lentigo NOS
+1.3.1.1.	lentigo simplex
+1.3.1.2.	solar lentigo
+1.4.	Melanosis
+1.5.	Seborrheic keratosis
+1.5.	Seborrhoeic Keratosis
+1.5.	seborrheic keratosis
+1.5.1.	lichenoid keratosis
+1.6.	Vascular lesion
+1.6.1.	angioma
+1.6.2.	Haemangioma
+1.6.3.	Pyogenic Granuloma
+1.6.4.	angiofibroma or fibrous papule
+2.	Pre-malignant
+2.1.	Actinic Keratosis
+2.1.	actinic keratosis
+2.2.	Intraepithelial Carcinoma
+3.	Malignant
+3.1.	Carcinoma
+3.1.1.	Basal Cell Carcinoma
+3.1.1.	Basal cell carcinoma
+3.1.1.	basal cell carcinoma
+3.1.1.	squamous cell carcinoma
+3.1.2.	Squamous Cell Carcinoma
+3.2.	Malignant Melanoma
+3.2.	Melanoma
+3.2.	Melanoma (0.76 - 1.5 mm)
+3.2.	Melanoma (less than 0.76 mm)
+3.2.	Melanoma (more than 1.5 mm)
+3.2.	melanoma
+3.2.1.	Melanoma (in situ)
+3.2.1.1.	Lentigo Maligna
+3.2.2.	Nodular Melanoma
+3.2.3.	Melanoma metastasis
+4.	Miscellaneous
+4.	other
+4.1.	scar
+5.	Undefined
+5.1.	atypical melanocytic proliferation

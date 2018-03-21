@@ -1,0 +1,71 @@
+# Step 3-0 / D3_ - Decision on Deep output / SVM input (when present)
+# Design dependencies => 1-0 => 3-0
+IMPORT | jbhi-1-0-deep
+
+DESIGN
+D3_N : ANY  # Experiment number (sequence before randomization)
+
+ g  : # Model training length
+-1  # early
+ 1  # full
+
+ h : # SVM Layer
+-1   # No
+ 1   # Yes
+
+ i : # Test augmentation post-deep (for input on SVM or prediction if no SVM)
+-1   # No  (1 sample)
+ 1   # Yes (50 samples)
+
+# ===============================================================
+# Full factorial
+# Generator: g h i
+# ===============================================================
+[D3_N  g  h  i]
+[   7  1  1  1]
+[   3 -1  1  1]
+[   4  1 -1 -1]
+[   2 -1  1 -1]
+[   5  1 -1  1]
+[   6  1  1 -1]
+[   0 -1 -1 -1]
+[   1 -1 -1  1]
+# No aliasing
+# ===============================================================
+
+PREFIX |D3_
+
+# ========================================
+# Decides the starting point and duration of the experiment
+#
+# a - Model
+# g - Model training length
+FACTORS  a g :
+    -1 -1 => D3_CHECKPOINT=|15000
+    -1  1 => D3_CHECKPOINT=|30000
+     1 -1 => D3_CHECKPOINT=|20000
+     1  1 => D3_CHECKPOINT=|40000
+
+# ========================================
+# Is there an SVM Layer post-deep?
+#
+# h - SVM Layer
+FACTORS  h :
+    -1 => D3_SVM_LAYER=|No
+     1 => D3_SVM_LAYER=|Yes
+
+# ========================================
+# Decides the starting point and duration of the experiment
+#
+# i - augmentation post-deep (for input on SVM or prediction if no SVM)
+FACTORS  i :
+    -1 => D3_TEST_REPLICAS=|1
+     1 => D3_TEST_REPLICAS=|50
+
+SHELL
+|/bin/bash
+
+SCRIPT
+echo -e '\n\nThis is not a stand-alone script !\n\n' >&2
+exit 1
+/SCRIPT

@@ -1,0 +1,16 @@
+# Step 0-1 / CREATE_ - Creates the training datasets
+# Design dependencies => 1-0 => 0-1
+# Actual running order dependencies => None
+IMPORT | jbhi-1-0-deep
+       "^D1_" => "CREATE_"
+
+DESIGN
+
+PREFIX | CREATE_
+
+FIRST b c f
+
+SHELL
+|/bin/bash
+
+SCRIPT_FROM | jbhi-0-0-create-dataset

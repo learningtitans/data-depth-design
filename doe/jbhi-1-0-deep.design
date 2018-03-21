@@ -1,0 +1,307 @@
+# Step 1-0 / D1_ - Sets fundamental factors
+# Design dependencies => None
+# Actual running order dependencies => None
+DESIGN
+  _S : ANY  # Experiment sequence (strictly sequential)
+
+D1_N : ANY  # Experiment number (sequence before randomization)
+
+ a : # Model
+-1   # Resnet 101 v2
+ 1   # Inception V4
+
+ b : # Training dataset :
+-1   # dataset: isicChallenge2017(Train)
+ 1   # dataset: isicChallenge2017(Train) + isicArchive(-aliases that contaminate) + portoPh2 + edinburghDermofit
+ 2   # debug dataset: isicChallenge2017(Train) + isicArchive(-aliases that contaminate)
+
+ c : # Input Resolution
+-1   # 299/305
+ 1   # 598
+
+ d : # Training augmentation
+-1   # default
+ 1   # customized
+
+ e : # Input normalization
+-1   # none
+ 1   # erase mean
+
+ f : # Segmentation
+-1   # no segmentation information
+ 1   # segmentation pre-encoded with learned encoder
+
+# ===============================================================
+# First round
+# Generator: a b c d e abcde
+# ===============================================================
+[_S  D1_N   a   b   c   d   e   f ]
+# "Fake" rounds to create debug dataset fullcross
+[-1.   -1. -1.  2. -1. -1. -1. -1.]
+[-2.   -2. -1.  2. -1. -1. -1.  1.]
+[-3.   -3. -1.  2.  1. -1. -1. -1.]
+[-4.   -4. -1.  2.  1. -1. -1.  1.]
+# Real experiments start here:
+[ 0.   28. -1. -1.  1.  1.  1.  1.]
+[ 1.   25.  1. -1. -1.  1.  1.  1.]
+[ 2.    0. -1. -1. -1. -1. -1. -1.]
+[ 3.    8. -1. -1. -1.  1. -1.  1.]
+[ 4.   26. -1.  1. -1.  1.  1.  1.]
+[ 5.   11.  1.  1. -1.  1. -1.  1.]
+[ 6.    3.  1.  1. -1. -1. -1. -1.]
+[ 7.   15.  1.  1.  1.  1. -1. -1.]
+[ 8.   27.  1.  1. -1.  1.  1. -1.]
+[ 9.   18. -1.  1. -1. -1.  1. -1.]
+[10.    6. -1.  1.  1. -1. -1. -1.]
+[11.   12. -1. -1.  1.  1. -1. -1.]
+[12.   31.  1.  1.  1.  1.  1.  1.]
+[13.   29.  1. -1.  1.  1.  1. -1.]
+[14.    1.  1. -1. -1. -1. -1.  1.]
+[15.   22. -1.  1.  1. -1.  1.  1.]
+[16.    9.  1. -1. -1.  1. -1. -1.]
+[17.   13.  1. -1.  1.  1. -1.  1.]
+[18.   19.  1.  1. -1. -1.  1.  1.]
+[19.   24. -1. -1. -1.  1.  1. -1.]
+[20.    4. -1. -1.  1. -1. -1.  1.]
+[21.   23.  1.  1.  1. -1.  1. -1.]
+[22.   14. -1.  1.  1.  1. -1.  1.]
+[23.   20. -1. -1.  1. -1.  1. -1.]
+[24.    7.  1.  1.  1. -1. -1.  1.]
+[25.   17.  1. -1. -1. -1.  1. -1.]
+[26.   21.  1. -1.  1. -1.  1.  1.]
+[27.    2. -1.  1. -1. -1. -1.  1.]
+[28.   30. -1.  1.  1.  1.  1. -1.]
+[29.    5.  1. -1.  1. -1. -1. -1.]
+[30.   10. -1.  1. -1.  1. -1. -1.]
+[31.   16. -1. -1. -1. -1.  1.  1.]
+#
+# Runs in this round: 32
+# Aliasing after first round:
+# a = bcdef
+# b = acdef
+# c = abdef
+# d = abcef
+# e = abcdf
+# f = abcde
+# ab = cdef
+# ac = bdef
+# ad = bcef
+# ae = bcdf
+# af = bcde
+# bc = adef
+# bd = acef
+# be = acdf
+# bf = acde
+# cd = abef
+# ce = abdf
+# cf = abde
+# de = abcf
+# df = abce
+# ef = abcd
+# abc = def
+# abd = cef
+# abe = cdf
+# abf = cde
+# acd = bef
+# ace = bdf
+# acf = bde
+# ade = bcf
+# adf = bce
+# aef = bcd
+# abcdef
+#
+# Aliasing severity matrix:
+# [  0.   0.   0.   0.   6.   0.]
+# [  0.   0.   0.  15.   0.   0.]
+# [  0.   0.  10.   0.   0.   0.]
+# [  0.   0.   0.   0.   0.   0.]
+# [  0.   0.   0.   0.   0.   0.]
+# [  0.   0.   0.   0.   0.   0.]]
+# ===============================================================
+# First round + second round
+# Generator: a b c d e f
+# ===============================================================
+[32. 32.  1. -1. -1. -1. -1. -1.]
+[33. 61.  1.  1. -1.  1.  1.  1.]
+[34. 53. -1.  1. -1.  1. -1.  1.]
+[35. 41.  1.  1. -1. -1.  1. -1.]
+[36. 46. -1. -1.  1.  1.  1. -1.]
+[37. 48. -1. -1. -1. -1. -1.  1.]
+[38. 36. -1. -1. -1.  1. -1. -1.]
+[39. 33. -1.  1. -1. -1. -1. -1.]
+[40. 55.  1.  1.  1.  1. -1.  1.]
+[41. 51. -1.  1.  1. -1. -1.  1.]
+[42. 52.  1. -1. -1.  1. -1.  1.]
+[43. 35.  1.  1.  1. -1. -1. -1.]
+[44. 62.  1. -1.  1.  1.  1.  1.]
+[45. 58. -1. -1.  1. -1.  1.  1.]
+[46. 50.  1. -1.  1. -1. -1.  1.]
+[47. 59.  1.  1.  1. -1.  1.  1.]
+[48. 45. -1.  1. -1.  1.  1. -1.]
+[49. 44.  1. -1. -1.  1.  1. -1.]
+[50. 63. -1.  1.  1.  1.  1.  1.]
+[51. 47.  1.  1.  1.  1.  1. -1.]
+[52. 39. -1.  1.  1.  1. -1. -1.]
+[53. 57. -1.  1. -1. -1.  1.  1.]
+[54. 49.  1.  1. -1. -1. -1.  1.]
+[55. 34. -1. -1.  1. -1. -1. -1.]
+[56. 56.  1. -1. -1. -1.  1.  1.]
+[57. 54. -1. -1.  1.  1. -1.  1.]
+[58. 60. -1. -1. -1.  1.  1.  1.]
+[59. 37.  1.  1. -1.  1. -1. -1.]
+[60. 38.  1. -1.  1.  1. -1. -1.]
+[61. 43. -1.  1.  1. -1.  1. -1.]
+[62. 42.  1. -1.  1. -1.  1. -1.]
+[63. 40. -1. -1. -1. -1.  1. -1.]
+#
+# Runs in this round: 32
+# No aliasing after this round
+# ===============================================================
+
+# Full factorial
+SELECT ALL
+
+# Fractional factorial
+# SELECT _S<32
+
+# Small scale for debugging tests
+# SELECT D1_N=0
+
+PREFIX |D1_
+
+# ========================================
+# Decides the starting point and duration of the experiment
+#
+# a - Model
+FACTORS  a :
+    -1 =>
+        D1_MAX_NUMBER_OF_STEPS=|30000
+        D1_START_CHECKPOINT=|resnet_v2_101.ckpt
+        D1_CHECKPOINT_EXCLUDE_SCOPES="resnet_v2_101/logits"
+     1 =>
+        D1_MAX_NUMBER_OF_STEPS=|40000
+        D1_START_CHECKPOINT=|inception_v4.ckpt
+        D1_CHECKPOINT_EXCLUDE_SCOPES="InceptionV4/Logits,InceptionV4/AuxLogits"
+
+
+# ========================================
+# Decides the deep-learning model
+#
+# f - Segmentation
+# a - Model
+FACTORS
+     f  a :
+    -1 -1 =>
+        D1_MODEL=|resnet_v2_101
+        D1_MODEL_NAME=|RESNET
+    -1  1 =>
+        D1_MODEL=|inception_v4
+        D1_MODEL_NAME=|INCEPTION
+     1 -1 =>
+        D1_MODEL=|resnet_v2_101_seg
+        D1_MODEL_NAME=|RESNET_SEG
+     1  1 =>
+        D1_MODEL=|inception_v4_seg
+        D1_MODEL_NAME=|INCEPTION_SEG
+
+# ========================================
+# Decides the training dataset details
+#
+# b - Training dataset
+
+FACTORS
+     b :
+    -1 =>
+        D1_DATASET_NAME=|challenge-train
+        D1_DATASET_TRAIN_SOURCE=|--train $HOME/jbhi-special-issue/skinLesions/splits/isicChallenge2017-train.csv
+        D1_DATASET_TEST_SOURCE=|
+     1 =>
+        D1_DATASET_NAME=|fulltrain
+        D1_DATASET_TRAIN_SOURCE=|--train $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-train.csv
+        D1_DATASET_TEST_SOURCE=|--test $HOME/jbhi-special-issue/skinLesions/splits/fulltrain-test.csv
+# The performances were too high on the dataset above, so we created the dataset fullcross for debugging
+     2 =>
+        D1_DATASET_NAME=|fullcross
+        D1_DATASET_TRAIN_SOURCE=|--train $HOME/jbhi-special-issue/skinLesions/splits/fullcross-train.csv
+        D1_DATASET_TEST_SOURCE=|--test $HOME/jbhi-special-issue/skinLesions/splits/fullcross-test.csv
+
+# ========================================
+# Decides the input resolution
+#
+# f - Segmentation
+# c - Input Resolution
+FACTORS
+     f  c :
+    -1 -1 => D1_RESOLUTION=|299
+    -1  1 => D1_RESOLUTION=|598
+     1 -1 => D1_RESOLUTION=|305
+     1  1 => D1_RESOLUTION=|598
+
+# ========================================
+# Decides the mask source
+#
+# f - Segmentation
+# b - Training Dataset
+# c - Input Resolution
+FACTORS
+     f  b  c :
+    -1 -1 -1 => D1_MASKS_SOURCE=|--do_not_create_masks_dir
+    -1 -1  1 => D1_MASKS_SOURCE=|--do_not_create_masks_dir
+    -1  1 -1 => D1_MASKS_SOURCE=|--do_not_create_masks_dir
+    -1  1  1 => D1_MASKS_SOURCE=|--do_not_create_masks_dir
+     1 -1 -1 => D1_MASKS_SOURCE=|--masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/305"
+     1 -1  1 => D1_MASKS_SOURCE=|--masks_dir "$JBHI_DIR/skinLesions/masksPng/train_challenge/598"
+     1  1 -1 => D1_MASKS_SOURCE=|--masks_dir "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/305"
+     1  1  1 => D1_MASKS_SOURCE=|--masks_dir "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/598"
+    -1  2 -1 => D1_MASKS_SOURCE=|--do_not_create_masks_dir
+    -1  2  1 => D1_MASKS_SOURCE=|--do_not_create_masks_dir
+     1  2 -1 => D1_MASKS_SOURCE=|--masks_dir "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/305"
+     1  2  1 => D1_MASKS_SOURCE=|--masks_dir "$JBHI_DIR/skinLesions/masksPng/train_fulltrain/598"
+
+# ========================================
+# Decides the augmentations on training (it has consequences on testing)
+#
+# d - Training augmentation
+FACTORS
+     d :
+    -1 =>
+        D1_AGGRESSIVE_AUGMENTATION=|False
+        D1_ADD_ROTATIONS=|False
+        D1_MINIMUM_AREA=|0.05
+     1 =>
+        D1_AGGRESSIVE_AUGMENTATION=|True
+        D1_ADD_ROTATIONS=|True
+        D1_MINIMUM_AREA=|0.20
+
+# ========================================
+# Decides the normalization of the input
+#
+# e - Input normalization
+FACTORS
+     e :
+    -1 => D1_NORMALIZE_PER_IMAGE=|0
+     1 => D1_NORMALIZE_PER_IMAGE=|1
+
+
+# ========================================
+# Decides the segmentation
+#
+# f - Segmentation
+FACTORS
+     f :
+    -1 =>
+        D1_SEGMENTED=|No
+        D1_SEG=|
+        D1_IGNORE_MISSING_VARS=|False
+     1 =>
+        D1_SEGMENTED=|Yes
+        D1_SEG=|-seg
+        D1_IGNORE_MISSING_VARS=|True
+
+SHELL
+|/bin/bash
+
+SCRIPT
+echo -e '\n\nThis is not a stand-alone script !\n\n' >&2
+exit 1
+/SCRIPT

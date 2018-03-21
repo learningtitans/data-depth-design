@@ -1,0 +1,17 @@
+# Step 3-1 / D3_1_ - Feature extraction for SVM
+# Design dependencies => 1-0 => 3-0 => 3-1
+# Actual running order dependencies => 0-1 => 1-2 => 3-1
+IMPORT | jbhi-3-0-last-layer
+
+DESIGN
+
+# Only the experiments with SVM intermediate layer => h=1
+# Filters out debug treatments => *_N>=0
+SELECT D1_N>=0 AND D3_N>=0 AND h=1
+
+PREFIX | D3_1_
+
+SHELL
+|/bin/bash
+
+SCRIPT_FROM | jbhi-3-1-svm-feature-train
